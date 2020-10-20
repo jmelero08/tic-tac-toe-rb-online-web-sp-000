@@ -22,13 +22,6 @@ def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end
 
-def play(board)
-  loop = 0 
-  while loop < 9 
-  loop += 1 
-  turn(board)
-end
-end
 
 def turn_count(board)
   turns = 0
